@@ -122,7 +122,7 @@ const glassCardClass =
 export const AppPreviewSection = () => {
   return (
     <section className="relative w-full overflow-hidden ">
-      <div className="relative overflow-hidden">
+      <div id="how-it-works" className="relative overflow-hidden">
         <div className="absolute left-1/2 top-[-520px] h-[1492px] w-[1492px] -translate-x-1/2 rounded-full bg-[#b45ff2] opacity-40 blur-[150px]" />
         <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col px-5 pb-24 pt-[90px] sm:px-8 lg:px-[100px]">
           <header className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
@@ -322,7 +322,7 @@ export const AppPreviewSection = () => {
           </div>
         </div>
       </div>
-      <section className="w-full bg-[#b45ff2]">
+      <section id="features" className="w-full bg-[#b45ff2]">
         <div className="mx-auto flex w-full max-w-[1440px] flex-col px-5 pb-[90px] pt-[90px] sm:px-8 lg:px-[100px]">
           <header className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
             <div className="inline-flex flex-col items-start justify-center gap-2">
@@ -407,7 +407,7 @@ export const AppPreviewSection = () => {
           </Card>
         </div>
       </section>
-      <section className="relative w-full  bg-[#08083f]">
+      <section id="contact" className="relative w-full  bg-[#08083f]">
         <img
           className="pointer-events-none absolute -right-44 top-0 hidden  lg:block"
           alt="Group"
@@ -513,7 +513,7 @@ export const AppPreviewSection = () => {
           </div>
         </div>
       </section>
-      <section className="relative flex w-full flex-col">
+      <section id="about" className="relative flex w-full flex-col">
         <div className="relative w-full overflow-hidden bg-[#b45ff24c]">
           <img
             className="pointer-events-none absolute left-0 top-1/2 h-[892px] w-[922px] -translate-y-1/2"
