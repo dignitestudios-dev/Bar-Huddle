@@ -216,13 +216,12 @@ export const AppPreviewSection = () => {
             <Card className={`${glassCardClass} h-full`}>
               <CardContent className="relative min-h-[420px] p-0">
                 <div className="absolute left-1/2 top-[-50px] h-[61px] w-[373px] -translate-x-1/2 rounded-[186.5px/30.5px] bg-white blur-[7px]" />
-                <div className="absolute left-[-50px] top-[-182px] inline-flex h-[782px] rotate-[43.39deg] items-center opacity-20">
+                <div className=" ">
                   <Image
-                    width={300}
-                    height={200}
+                    fill
                     alt="Frame"
-                    src="/figmaAssets/front_view_blank_smartphone_psd_mockup_3 1.png"
-                    className="object-cover absolute bottom-0 z-10"
+                    src="/figmaAssets/frame-design.png"
+                    className=" w-full"
                   />
                 </div>
                 <div className="absolute left-[24px] top-[32px] max-w-[525px] [font-family:'Manrope',Helvetica] text-[32px] font-semibold leading-9 tracking-[0] text-white">
@@ -282,43 +281,18 @@ export const AppPreviewSection = () => {
                     with people you meet
                   </span>
                 </div>
-                <div className="absolute left-1/2 top-[152px] h-[161px] w-[466px] -translate-x-1/2">
-                  <img
-                    className="absolute left-0 rounded-full top-[30px] h-[102px] w-[102px] border-[4.31px] border-solid border-transparent object-cover"
-                    alt="Ellipse"
-                    src="/figmaAssets/ellipse-9365.png"
-                  />
-                  <img
-                    className="absolute left-[364px] rounded-full top-[30px] h-[102px] w-[102px] border-[4.31px] border-solid border-transparent object-cover"
-                    alt="Ellipse"
-                    src="/figmaAssets/ellipse-9366.png"
-                  />
-                  <img
-                    className="absolute left-[282px] rounded-full top-6 h-[114px] w-[114px] border-[4.31px] border-solid border-transparent object-cover"
-                    alt="Ellipse"
-                    src="/figmaAssets/ellipse-9367.png"
-                  />
-                  <img
-                    className="absolute left-[70px] rounded-full top-6 h-[114px] w-[114px] border-[4.31px] border-solid border-transparent object-cover"
-                    alt="Ellipse"
-                    src="/figmaAssets/ellipse-9368.png"
-                  />
-                  <img
-                    className="absolute left-[152px] rounded-full top-0 h-[161px] w-[161px]"
-                    alt="Ellipse"
-                    src="/figmaAssets/ellipse-9369.png"
-                  />
-                </div>
-                <div className="absolute left-[243px] rounded-full top-[90px] flex h-[143px] w-[145px] rotate-[-8.08deg]">
-                  <img
-                    className="ml-[-2.5px] mt-[-2.8px] h-[148.78px] w-[149.61px] rotate-[8.08deg]"
-                    alt="Group"
-                    src="/figmaAssets/group-1000010469.png"
-                  />
-                </div>
+                <div className="flex items-center justify-center p-4">
+                 <Image
+                   src="/figmaAssets/list-attend.png"
+                   width={250}
+                   height={250}
+                   className="object-cover absolute bottom-0 z-10"
+                    alt="Frame"
+                      />   
+                      </div>        
               </CardContent>
             </Card>
-            <Card className="h-full rounded-3xl overflow-hidden">
+            <Card className="h-full border-0 overflow-hidden">
               <CardContent className="relative min-h-[361px] p-0">
                 <div className="absolute z-10 left-[24px] top-[32px] max-w-[584px] [font-family:'Manrope',Helvetica] text-[32px] font-normal leading-9 tracking-[0] text-transparent">
                   <span className="font-semibold text-white"> Find The</span>
@@ -330,7 +304,7 @@ export const AppPreviewSection = () => {
                 </div>
                 <div className="flex items-center justify-center p-4">
                   <Image
-                    width={300}
+                    width={280}
                     height={200}
                     alt="Frame"
                     src="/figmaAssets/front_view_blank_smartphone_psd_mockup_3 1.png"
@@ -340,13 +314,10 @@ export const AppPreviewSection = () => {
                 <Image
                   fill
                   alt="Frame"
-                  src="/figmaAssets/frame-1597880387.png"
-                  className="object-cover"
+                  src="/figmaAssets/test-fram-1.png"
+                  className="object-cover absolute z-8!"
                 />
-
-                {/* Glass Overlay */}
-                <div className={`absolute inset-0 ${glassCardClass}`} />
-              </CardContent>
+                 </CardContent>
             </Card>
           </div>
         </div>
@@ -612,8 +583,7 @@ export const AppPreviewSection = () => {
             </Card>
           </div>
         </div>
-        <footer className="relative -mt-[79px] w-full overflow-hidden rounded-[40px_40px_0px_0px] sm:rounded-[70px_70px_0px_0px] lg:rounded-[100px_100px_0px_0px] bg-[linear-gradient(195deg,rgba(180,95,242,1)_10%,rgba(132,36,187,1)_100%)] backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)]">
-          <div className="absolute left-1/2 top-[-51px] h-[61px] w-[671px] -translate-x-1/2 rounded-[335.5px/30.5px] bg-white blur-[7px]" />
+        <footer className="relative -mt-[79px] w-full overflow-hidden  bg-[#000842] backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)]">          
           <img
             className="absolute left-[29px] top-[5px] hidden h-[561px] w-[568px] lg:block"
             alt="Bar huddle JPEG"
