@@ -84,7 +84,7 @@ export const LandingPage = () => {
         <section className="relative z-10 w-full">
           <div className="relative mx-auto h-[700px] sm:h-[900px] lg:h-[1200px] w-full max-w-[1440px]">
             <img
-              className="absolute top-[280px] sm:top-[400px] lg:top-[582px] left-1/2 h-auto w-[220px] sm:w-[380px] lg:w-[608px] lg:h-[615px] -translate-x-1/2 object-cover pointer-events-none select-none"
+              className="absolute top-[400px] sm:top-[400px] lg:top-[582px] left-1/2 h-auto w-[280px] sm:w-[380px] lg:w-[608px] lg:h-[615px] -translate-x-1/2 object-cover pointer-events-none select-none"
               alt="Element"
               src="/figmaAssets/413467941-1d8c4441-f695-4631-ab7f-05e1efafd78e--1--2.png"
             />
