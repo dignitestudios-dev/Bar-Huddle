@@ -23,7 +23,7 @@ export const HeroIntroSection = () => {
     <section className="relative w-full px-4 pt-[100px] sm:pt-[140px] lg:pt-[188px] sm:px-6 lg:px-8">
       <div className="mx-auto flex w-full max-w-[819px] flex-col items-center gap-6 text-center">
         <header className="flex w-full flex-col items-center gap-6">
-          <h1 className="w-full [font-family:'Manrope',Helvetica] text-[40px] font-semibold leading-[1.05] tracking-[-1.2px] text-transparent sm:text-[52px] sm:tracking-[-1.6px] md:text-[62px] md:tracking-[-1.9px] lg:text-[70px] lg:leading-[75px] lg:tracking-[-2.1px]">
+          <h1 className="w-full [font-family:'Manrope',Helvetica] capitalize text-[40px] font-semibold leading-[1.05] tracking-[-1.2px] text-transparent sm:text-[52px] sm:tracking-[-1.6px] md:text-[62px] md:tracking-[-1.9px] lg:text-[70px] lg:leading-[75px] lg:tracking-[-2.1px]">
             <span className="text-[#fdf88f]">Discover</span>
             <span className="text-[#b45ff2]">
               {" "}

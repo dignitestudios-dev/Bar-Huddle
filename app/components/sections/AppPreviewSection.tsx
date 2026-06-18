@@ -52,10 +52,10 @@ const featureColumnsLeft = [
     title: "Live Venue Activity",
     description: "See which venues are trending in real time.",
   },
-  {
+  { 
     number: "03",
-    title: "In built for modern discovery",
-    description: "Search mixed with or anywhere in the world",
+    title: "Global Venue Discovery",
+    description: "Explore nightlife venues worldwide with live insights, activity, and venue data.",
   },
 ];
 
@@ -67,8 +67,8 @@ const featureColumnsRight = [
   },
   {
     number: "04",
-    title: "Find and connect",
-    description: "Find and connect with people, securely chat with them.",
+    title: "Find Your Crowd",
+    description: "Add people you meet, grow your network, and keep in touch through secure chat.",
   },
 ];
 
@@ -87,7 +87,7 @@ const contactInfo = [
   },
   {
     label: "Email",
-    value: "hello@barhuddleapp.com",
+    value: "support@barhuddle.com",
     icon: "/figmaAssets/frame-1597880409-1.svg",
     underline: false,
   },
@@ -193,7 +193,7 @@ export const AppPreviewSection = () => {
                     </div>
                   ))}
                 </div>
-                <div className="absolute left-[24px] top-[32px] max-w-[518px] [font-family:'Manrope',Helvetica] text-[32px] font-normal leading-9 tracking-[0] text-transparent">
+                <div className="absolute capitalize left-[24px] top-[32px] max-w-[518px] [font-family:'Manrope',Helvetica] text-[32px] font-normal leading-9 tracking-[0] text-transparent">
                   <span className="font-semibold text-white">
                     Find bars, clubs, and lounges&nbsp;
                   </span>
@@ -224,7 +224,7 @@ export const AppPreviewSection = () => {
                     className=" w-full"
                   />
                 </div>
-                <div className="absolute left-[24px] top-[32px] max-w-[525px] [font-family:'Manrope',Helvetica] text-[32px] font-semibold leading-9 tracking-[0] text-white">
+                <div className="absolute capitalize left-[24px] top-[32px] max-w-[525px] [font-family:'Manrope',Helvetica] text-[32px] font-semibold leading-9 tracking-[0] text-white">
                   Check live attendee activity and discover where the crowd is
                   heading.
                 </div>
@@ -272,7 +272,7 @@ export const AppPreviewSection = () => {
             <Card className={`${glassCardClass} h-full`}>
               <CardContent className="relative min-h-[361px] p-0">
                 <div className="absolute left-1/2 top-[-50px] h-[61px] w-[373px] -translate-x-1/2 rounded-[186.5px/30.5px] bg-white blur-[7px]" />
-                <div className="absolute left-[24px] top-[32px] max-w-[584px] [font-family:'Manrope',Helvetica] text-[32px] font-normal leading-9 tracking-[0] text-transparent">
+                <div className="absolute capitalize left-[24px] top-[32px] max-w-[584px] [font-family:'Manrope',Helvetica] text-[32px] font-normal leading-9 tracking-[0] text-transparent">
                   <span className="font-bold text-[#fdf88f]">
                     Make connections
                   </span>
@@ -282,21 +282,21 @@ export const AppPreviewSection = () => {
                   </span>
                 </div>
                 <div className="flex items-center justify-center p-4">
-                 <Image
-                   src="/figmaAssets/list-attend.png"
-                   width={250}
-                   height={250}
-                   className="object-cover absolute bottom-0 z-10"
+                  <Image
+                    src="/figmaAssets/list-attend.png"
+                    width={250}
+                    height={250}
+                    className="object-cover absolute bottom-0 z-10"
                     alt="Frame"
-                      />   
-                      </div>        
+                  />
+                </div>
               </CardContent>
             </Card>
             <Card className="h-full border-0 overflow-hidden">
               <CardContent className="relative min-h-[361px] p-0">
-                <div className="absolute z-10 left-[24px] top-[32px] max-w-[584px] [font-family:'Manrope',Helvetica] text-[32px] font-normal leading-9 tracking-[0] text-transparent">
+                <div className="absolute z-10 left-[24px] capitalize top-[32px] max-w-[584px] [font-family:'Manrope',Helvetica] text-[32px] font-normal leading-9 tracking-[0] text-transparent">
                   <span className="font-semibold text-white"> Find The</span>
-                  <span className="font-bold text-[#fdf88f]">Perfect Spot</span>
+                  <span className="font-bold text-[#fdf88f]"> Perfect Spot</span>
                   <span className="font-semibold text-white">
                     {" "}
                     For Your <br /> Night
@@ -317,7 +317,7 @@ export const AppPreviewSection = () => {
                   src="/figmaAssets/test-fram-1.png"
                   className="object-cover absolute z-8!"
                 />
-                 </CardContent>
+              </CardContent>
             </Card>
           </div>
         </div>
@@ -328,7 +328,7 @@ export const AppPreviewSection = () => {
             <div className="inline-flex flex-col items-start justify-center gap-2">
               <h2 className="self-stretch [font-family:'Manrope',Helvetica] text-[42px] font-semibold leading-[48px] tracking-[-0.84px] text-transparent sm:text-[52px] sm:leading-[60px] lg:text-[65px] lg:leading-[75px]">
                 <span className="tracking-[-0.84px] text-white">
-                  Built for Modern Nightlife
+                  Built for Modern
                   <br />
                   Nightlife{" "}
                 </span>
@@ -417,12 +417,12 @@ export const AppPreviewSection = () => {
           <div className="relative z-10 grid grid-cols-1 gap-8 lg:grid-cols-[600px_624px] lg:justify-between">
             <div className="flex flex-col items-start gap-16">
               <div className="flex flex-col items-start gap-6 self-stretch">
-                <h2 className="self-stretch [font-family:'Manrope',Helvetica] text-[44px] font-normal leading-[48px] tracking-[-0.88px] text-transparent sm:text-[54px] sm:leading-[58px] lg:text-[65px] lg:leading-[65px]">
+                <h2 className="self-stretch capitalize [font-family:'Manrope',Helvetica] text-[44px] font-normal leading-[48px] tracking-[-0.88px] text-transparent sm:text-[54px] sm:leading-[58px] lg:text-[65px] lg:leading-[65px]">
                   <span className="font-bold tracking-[-0.84px] leading-[70px] text-[#b45ff2]">
-                    Let us take the guess work out of your
+                    Let us take the guess work out of your{" "}
                   </span>
-                  <span className="font-bold tracking-[-0.84px] leading-[70px] text-[#fdf88f]">
-                    night out.
+                  <span className="font-bold capitalize tracking-[-0.84px] leading-[70px] text-[#fdf88f]">
+                    Night out.
                   </span>
                 </h2>
                 <p className="max-w-[483px] [font-family:'Manrope',Helvetica] text-lg font-normal leading-6 tracking-[0] text-[#e7c7ff]">
@@ -448,9 +448,8 @@ export const AppPreviewSection = () => {
                           {item.label}
                         </div>
                         <div
-                          className={`relative [font-family:'Manrope',Helvetica] text-lg font-normal leading-6 tracking-[0] text-white break-words ${
-                            item.underline ? "underline" : ""
-                          }`}
+                          className={`relative [font-family:'Manrope',Helvetica] text-lg font-normal leading-6 tracking-[0] text-white break-words ${item.underline ? "underline" : ""
+                            }`}
                         >
                           {item.value}
                         </div>
@@ -465,7 +464,7 @@ export const AppPreviewSection = () => {
                 {/* <div className="absolute inset-y-0 right-[-70px] w-[260px] rounded-full bg-[#8424bb]/40 blur-0" /> */}
                 <div className="relative w-full inline-flex flex-col items-start gap-4">
                   <div className="flex w-full max-w-[560px] flex-col items-start gap-3">
-                    <h3 className="w-fit [font-family:'Manrope',Helvetica] text-[45px] font-normal leading-[55px] tracking-[-0.90px] text-[#b45ff2]">
+                    <h3 className="w-fit  [font-family:'Manrope',Helvetica] text-[45px] font-bold leading-[55px] tracking-[-0.90px] text-[#b45ff2]">
                       Get In Touch
                     </h3>
                     <p className="self-stretch [font-family:'Manrope',Helvetica] text-lg font-normal leading-6 tracking-[0] text-white">
@@ -534,7 +533,7 @@ export const AppPreviewSection = () => {
             <Card className="rounded-[10px] border-0 bg-[#b45ff233] shadow-[0px_4px_12px_#00000040,inset_0_1px_0_rgba(255,255,255,0.40),inset_1px_0_0_rgba(255,255,255,0.32),inset_0_-1px_1px_rgba(0,0,0,0.13),inset_-1px_0_1px_rgba(0,0,0,0.11)] backdrop-blur-[2px] backdrop-brightness-[110%] [-webkit-backdrop-filter:blur(2px)_brightness(110%)]">
               <CardContent className="flex flex-col items-center justify-between gap-8 px-6 py-8 lg:flex-row lg:px-[60px] lg:py-[5px]">
                 <div className="inline-flex flex-col items-start justify-center gap-[21px]">
-                  <h2 className="max-w-[580px] [font-family:'Manrope',Helvetica] text-[32px] font-semibold leading-[38px] tracking-[0.64px] text-transparent sm:text-[40px] sm:leading-[45px]">
+                  <h2 className="max-w-[580px] font-['Manrope',Helvetica] text-[32px] font-semibold leading-[38px] tracking-[0.64px] text-transparent sm:text-[40px] sm:leading-[45px]">
                     <span className="tracking-[0.32px]  text-white">
                       Download The
                     </span>
@@ -543,7 +542,7 @@ export const AppPreviewSection = () => {
                       App Now!
                     </span>
                   </h2>
-                  <p className="max-w-[616px] [font-family:'Poppins',Helvetica] text-base font-light leading-6 tracking-[-0.80px] text-white">
+                  <p className="max-w-[616px] font-['Manrope',Helvetica]  text-base font-light leading-6 tracking-[-0.80px] text-white">
                     Discover nearby venues in real time, find where people are
                     gathering, and connect once you step inside. No unnecessary
                     swipes. No algorithms.
@@ -583,7 +582,12 @@ export const AppPreviewSection = () => {
             </Card>
           </div>
         </div>
-        <footer className="relative -mt-[79px] w-full overflow-hidden  bg-[#000842] backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)]">          
+        <footer
+          className="relative rounded-t-[100px] -mt-[79px] w-full overflow-hidden backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)]"
+          style={{
+            background: "linear-gradient(238.16deg, #B45FF2 19.57%, #8424BB 82.32%)",
+          }}
+        >
           <img
             className="absolute left-[29px] top-[5px] hidden h-[561px] w-[568px] lg:block"
             alt="Bar huddle JPEG"
