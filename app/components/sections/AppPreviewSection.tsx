@@ -692,18 +692,18 @@ export const AppPreviewSection = () => {
                   © 2026 Bar Huddle App. All Rights Reserved.
                 </div>
                 <div className="flex items-center gap-8">
-                  <button
-                    type="button"
-                    className="[font-family:'Montserrat',Helvetica] text-base font-medium leading-[normal] tracking-[0] text-white"
+                  <a
+                    href="/privacy-policy"
+                    className="[font-family:'Montserrat',Helvetica] text-base font-medium leading-[normal] tracking-[0] text-white hover:text-[#fdf88f] transition-colors cursor-pointer"
                   >
                     Privacy Policy
-                  </button>
-                  <button
-                    type="button"
-                    className="[font-family:'Montserrat',Helvetica] text-base font-medium leading-[normal] tracking-[0] text-white"
+                  </a>
+                  <a
+                    href="/terms-and-conditions"
+                    className="[font-family:'Montserrat',Helvetica] text-base font-medium leading-[normal] tracking-[0] text-white hover:text-[#fdf88f] transition-colors cursor-pointer"
                   >
                     Terms &amp; Conditions
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
