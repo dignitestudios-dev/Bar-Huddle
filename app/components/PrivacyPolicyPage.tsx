@@ -1051,12 +1051,15 @@ export const PrivacyPolicyPage = () => {
               <div className="text-base font-medium text-white">
                 © 2026 Bar Huddle App. All Rights Reserved.
               </div>
-              <div className="flex items-center gap-8">
+              <div className="flex flex-wrap items-center gap-6 sm:gap-8">
                 <a href="/privacy-policy" className="text-base font-medium text-[#fdf88f] underline">
                   Privacy Policy
                 </a>
                 <a href="/terms-and-conditions" className="text-base font-medium text-white hover:text-[#fdf88f] transition-colors">
                   Terms &amp; Conditions
+                </a>
+                <a href="/child-safety-policy" className="text-base font-medium text-white hover:text-[#fdf88f] transition-colors">
+                  Child Safety Policy
                 </a>
               </div>
             </div>

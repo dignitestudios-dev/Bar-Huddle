@@ -691,7 +691,7 @@ export const AppPreviewSection = () => {
                 <div className="[font-family:'Montserrat',Helvetica] text-base font-medium leading-[normal] tracking-[0] text-white">
                   © 2026 Bar Huddle App. All Rights Reserved.
                 </div>
-                <div className="flex items-center gap-8">
+                <div className="flex flex-wrap items-center gap-6 sm:gap-8">
                   <a
                     href="/privacy-policy"
                     className="[font-family:'Montserrat',Helvetica] text-base font-medium leading-[normal] tracking-[0] text-white hover:text-[#fdf88f] transition-colors cursor-pointer"
@@ -703,6 +703,12 @@ export const AppPreviewSection = () => {
                     className="[font-family:'Montserrat',Helvetica] text-base font-medium leading-[normal] tracking-[0] text-white hover:text-[#fdf88f] transition-colors cursor-pointer"
                   >
                     Terms &amp; Conditions
+                  </a>
+                  <a
+                    href="/child-safety-policy"
+                    className="[font-family:'Montserrat',Helvetica] text-base font-medium leading-[normal] tracking-[0] text-white hover:text-[#fdf88f] transition-colors cursor-pointer"
+                  >
+                    Child Safety Policy
                   </a>
                 </div>
               </div>
