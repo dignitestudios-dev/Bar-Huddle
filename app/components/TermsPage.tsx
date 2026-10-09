@@ -111,12 +111,14 @@ const storeButtons = [
     label: "App Store",
     icon: "/figmaAssets/logos-apple-app-store.svg",
     iconClass: "w-[22px] h-[22px]",
+    href: "https://apps.apple.com/us/app/bar-huddle/id6780429167",
   },
   {
     eyebrow: "Get it on",
     label: "Google Play",
     icon: "/figmaAssets/google-play-6124997-1-2.png",
     iconClass: "w-[22px] h-[22px] object-cover",
+    href: "https://play.google.com/store/apps/details?id=com.dignitestudios.barhuddle",
   },
 ];
 
@@ -990,9 +992,12 @@ export const TermsPage = () => {
               </p>
               <div className="inline-flex flex-col items-start justify-center gap-4">
                 {storeButtons.map((button) => (
-                  <button
+                  <a
                     key={`footer-terms-${button.label}`}
-                    className="h-auto w-[180px] rounded-[364.1px] border border-solid border-[#e7c7ff] bg-[#8424bb] px-4 py-2 shadow-[0px_0px_8px_2px_#b45ff2] cursor-pointer hover:bg-[#731da6] transition-all"
+                    href={button.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center h-auto w-[180px] rounded-[364.1px] border border-solid border-[#e7c7ff] bg-[#8424bb] px-4 py-2 shadow-[0px_0px_8px_2px_#b45ff2] cursor-pointer hover:bg-[#731da6] transition-all"
                   >
                     <span className="flex items-center justify-center gap-2.5">
                       <img className={button.iconClass} alt={button.label} src={button.icon} />
@@ -1001,7 +1006,7 @@ export const TermsPage = () => {
                         <span className="text-sm font-bold text-white">{button.label}</span>
                       </span>
                     </span>
-                  </button>
+                  </a>
                 ))}
               </div>
             </div>

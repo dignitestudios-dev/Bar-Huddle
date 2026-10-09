@@ -50,25 +50,35 @@ const featureColumnsLeft = [
   {
     number: "01",
     title: "Live Venue Activity",
-    description: "See which venues are trending in real time.",
+    description: "Check out the live activity at nearby bars and see where the crowd is bringing the energy.",
   },
   { 
     number: "03",
+    title: "Stories",
+    description: "Share the moments as they happen. Post live updates from your night and make it visible for your friends.",
+  },
+  {
+    number: "05",
     title: "Global Venue Discovery",
-    description: "Explore nightlife venues worldwide with live insights, activity, and venue data.",
+    description: "New city, new plans, new night. Explore bars, clubs and lounges. See what’s waiting around the corner.",
   },
 ];
 
 const featureColumnsRight = [
   {
     number: "02",
-    title: "Attendance Insights",
-    description: "Know who's going before stepping out.",
+    title: "Bar Hopping",
+    description: "Keep your night moving from one spot to the next. Discover new bars and track your stops.",
   },
   {
     number: "04",
+    title: "Friends Visibility",
+    description: "You decide who gets to see your night. Share your activity with friends, trusted people or keep it completely private.",
+  },
+  {
+    number: "06",
     title: "Find Your Crowd",
-    description: "Add people you meet, grow your network, and keep in touch through secure chat.",
+    description: "Go out, meet people, and make connections with others who are there to enjoy the night too.",
   },
 ];
 
@@ -99,12 +109,14 @@ const storeButtons = [
     label: "App Store",
     icon: "/figmaAssets/logos-apple-app-store.svg",
     iconClass: "w-[22px] h-[22px]",
+    href: "https://apps.apple.com/us/app/bar-huddle/id6780429167",
   },
   {
     eyebrow: "Get it on",
     label: "Google Play",
     icon: "/figmaAssets/google-play-6124997-1-2.png",
     iconClass: "w-[22px] h-[22px] object-cover",
+    href: "https://play.google.com/store/apps/details?id=com.dignitestudios.barhuddle",
   },
 ];
 
@@ -129,10 +141,10 @@ export const AppPreviewSection = () => {
             <div className="flex flex-col items-start gap-2">
               <h2 className="relative w-fit [font-family:'Manrope',Helvetica] text-[44px] font-normal leading-[48px] tracking-[0.88px] text-transparent sm:text-[56px] sm:leading-[60px] lg:text-[70px] lg:leading-[75px]">
                 <span className="font-semibold tracking-[0.98px] text-[#b45ff2]">
-                  How It{" "}
+                  How BarHuddle Works{" "}
                 </span>
                 <span className="font-semibold tracking-[0.98px] text-white">
-                  works
+                  for Your Night Out
                 </span>
               </h2>
               <div className="inline-flex items-center gap-[9.74px]">
@@ -155,8 +167,7 @@ export const AppPreviewSection = () => {
                 src="/figmaAssets/line-19.svg"
               />
               <p className="max-w-[492px] [font-family:'Manrope',Helvetica] text-lg font-normal leading-6 tracking-[0] text-[#fdf88f]">
-                Explore trending nightlife spots, discover who’s attending, and
-                meet new people as the night unfolds.
+                Find the right spot, see where your friends are and keep the night moving. BarHuddle makes every part of your night out more connected.
               </p>
             </div>
           </header>
@@ -194,11 +205,11 @@ export const AppPreviewSection = () => {
                   ))}
                 </div>
                 <div className="absolute capitalize left-[24px] top-[32px] max-w-[518px] [font-family:'Manrope',Helvetica] text-[32px] font-normal leading-9 tracking-[0] text-transparent">
-                  <span className="font-semibold text-white">
-                    Find bars, clubs, and lounges&nbsp;
-                  </span>
                   <span className="font-bold text-[#fdf88f]">
-                    near you instantly
+                    Instantly Find&nbsp;
+                  </span>
+                  <span className="font-semibold text-white">
+                    the Perfect Bar, Club, or Lounge for Your Night Out
                   </span>
                 </div>
                 <img
@@ -225,8 +236,7 @@ export const AppPreviewSection = () => {
                   />
                 </div>
                 <div className="absolute capitalize left-[24px] top-[32px] max-w-[525px] [font-family:'Manrope',Helvetica] text-[32px] font-semibold leading-9 tracking-[0] text-white">
-                  Check live attendee activity and discover where the crowd is
-                  heading.
+                  See What’s Happening Live and Choose Your Next Night Out Spot Accordingly
                 </div>
                 <div className="absolute left-1/2 top-[35%] h-[219px] w-[429px] -translate-x-1/2 -translate-y-[-10px]">
                   <div className="absolute left-[77px] top-[9px] h-[87px] w-[350px] rotate-[-3.03deg] rounded-[29.13px] bg-[#e7c7ff] shadow-[0px_4px_30px_#83838340]" />
@@ -274,11 +284,11 @@ export const AppPreviewSection = () => {
                 <div className="absolute left-1/2 top-[-50px] h-[61px] w-[373px] -translate-x-1/2 rounded-[186.5px/30.5px] bg-white blur-[7px]" />
                 <div className="absolute capitalize left-[24px] top-[32px] max-w-[584px] [font-family:'Manrope',Helvetica] text-[32px] font-normal leading-9 tracking-[0] text-transparent">
                   <span className="font-bold text-[#fdf88f]">
-                    Make connections
+                    Meet New People
                   </span>
                   <span className="font-semibold text-white">
                     {" "}
-                    with people you meet
+                    and Make Connections Along the Way
                   </span>
                 </div>
                 <div className="flex items-center justify-center p-4">
@@ -295,12 +305,8 @@ export const AppPreviewSection = () => {
             <Card className="h-full border-0 overflow-hidden">
               <CardContent className="relative min-h-[361px] p-0">
                 <div className="absolute z-10 left-[24px] capitalize top-[32px] max-w-[584px] [font-family:'Manrope',Helvetica] text-[32px] font-normal leading-9 tracking-[0] text-transparent">
-                  <span className="font-semibold text-white"> Find The</span>
-                  <span className="font-bold text-[#fdf88f]"> Perfect Spot</span>
-                  <span className="font-semibold text-white">
-                    {" "}
-                    For Your <br /> Night
-                  </span>
+                  <span className="font-semibold text-white">Pick the Spot </span>
+                  <span className="font-bold text-[#fdf88f]">That Matches Your Vibe</span>
                 </div>
                 <div className="flex items-center justify-center p-4">
                   <Image
@@ -328,12 +334,10 @@ export const AppPreviewSection = () => {
             <div className="inline-flex flex-col items-start justify-center gap-2">
               <h2 className="self-stretch [font-family:'Manrope',Helvetica] text-[42px] font-semibold leading-[48px] tracking-[-0.84px] text-transparent sm:text-[52px] sm:leading-[60px] lg:text-[65px] lg:leading-[75px]">
                 <span className="tracking-[-0.84px] text-white">
-                  Built for Modern
-                  <br />
-                  Nightlife{" "}
+                  See What BarHuddle Has to Offer for{" "}
                 </span>
                 <span className="tracking-[-0.84px] text-[#fdf88f]">
-                  Discovery
+                  Your Night Out Plans
                 </span>
               </h2>
             </div>
@@ -351,14 +355,22 @@ export const AppPreviewSection = () => {
           </header>
           <Card className={`${glassCardClass} mt-16`}>
             <CardContent className="relative p-8 sm:p-10 lg:p-[60px]">
+              {/* Vertical Divider */}
               <img
-                className="pointer-events-none absolute left-1/2 top-1/2 h-[350px] w-[13px] -translate-x-1/2 -translate-y-1/2"
-                alt="Line"
+                className="pointer-events-none absolute left-1/2 top-1/2 hidden h-[88%] w-[13px] -translate-x-1/2 -translate-y-1/2 lg:block"
+                alt="Vertical Divider"
                 src="/figmaAssets/line-20.svg"
               />
+              {/* Horizontal Divider 1 (between Row 1 & Row 2) */}
               <img
-                className="pointer-events-none absolute left-1/2 top-1/2 h-[13px] w-[92%] -translate-x-1/2 -translate-y-1/2"
-                alt="Line"
+                className="pointer-events-none absolute left-1/2 top-[35%] hidden h-[13px] w-[92%] -translate-x-1/2 -translate-y-1/2 lg:block"
+                alt="Horizontal Divider"
+                src="/figmaAssets/line-21.svg"
+              />
+              {/* Horizontal Divider 2 (between Row 2 & Row 3) */}
+              <img
+                className="pointer-events-none absolute left-1/2 top-[68%] hidden h-[13px] w-[92%] -translate-x-1/2 -translate-y-1/2 lg:block"
+                alt="Horizontal Divider"
                 src="/figmaAssets/line-21.svg"
               />
               <div className="relative grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-[142px]">
@@ -419,16 +431,14 @@ export const AppPreviewSection = () => {
               <div className="flex flex-col items-start gap-6 self-stretch">
                 <h2 className="self-stretch capitalize [font-family:'Manrope',Helvetica] text-[44px] font-normal leading-[48px] tracking-[-0.88px] text-transparent sm:text-[54px] sm:leading-[58px] lg:text-[65px] lg:leading-[65px]">
                   <span className="font-bold tracking-[-0.84px] leading-[70px] text-[#b45ff2]">
-                    Let us take the guess work out of your{" "}
+                    Have Something{" "}
                   </span>
                   <span className="font-bold capitalize tracking-[-0.84px] leading-[70px] text-[#fdf88f]">
-                    Night out.
+                    to Say?
                   </span>
                 </h2>
                 <p className="max-w-[483px] [font-family:'Manrope',Helvetica] text-lg font-normal leading-6 tracking-[0] text-[#e7c7ff]">
-                  Know before you go. Bar Huddle is your ultimate tool to let
-                  you focus on the right things. Find the best spot before you
-                  step out the door.
+                  Have a question or feedback about your BarHuddle experience? Send us a message and let’s talk. We’d love to hear from you.
                 </p>
               </div>
               <div className="flex w-full max-w-[538px] flex-col gap-[15px]">
@@ -468,7 +478,7 @@ export const AppPreviewSection = () => {
                       Get In Touch
                     </h3>
                     <p className="self-stretch [font-family:'Manrope',Helvetica] text-lg font-normal leading-6 tracking-[0] text-white">
-                      Have questions or feedback? Reach out anytime.
+                      Have a question or feedback about your BarHuddle experience? Send us a message and let’s talk. We’d love to hear from you.
                     </p>
                   </div>
                   <form className="flex w-full flex-col items-start gap-4">
@@ -535,24 +545,25 @@ export const AppPreviewSection = () => {
                 <div className="inline-flex flex-col items-start justify-center gap-[21px]">
                   <h2 className="max-w-[580px] font-['Manrope',Helvetica] text-[32px] font-semibold leading-[38px] tracking-[0.64px] text-transparent sm:text-[40px] sm:leading-[45px]">
                     <span className="tracking-[0.32px]  text-white">
-                      Download The
+                      Bring BarHuddle Along
                     </span>
                     <span className="tracking-[0.32px] text-[#fdf88f]">
                       {" "}
-                      App Now!
+                      for Your Next Night Out
                     </span>
                   </h2>
                   <p className="max-w-[616px] font-['Manrope',Helvetica]  text-base font-light leading-6 tracking-[-0.80px] text-white">
-                    Discover nearby venues in real time, find where people are
-                    gathering, and connect once you step inside. No unnecessary
-                    swipes. No algorithms.
+                    Discover new bars, clubs and lounges. See what’s happening before you get there and find the crowd you want to spend the night with. Share your moments with BarHuddle.
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4">
                     {storeButtons.map((button) => (
-                      <button
+                      <a
                         key={button.label}
-                        className="h-auto w-[180px] rounded-[364.1px] cursor-pointer border border-solid border-[#e7c7ff] bg-[#8424bb] px-4 py-2 shadow-[0px_0px_8px_2px_#b45ff2]"
+                        href={button.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center h-auto w-[180px] rounded-[364.1px] cursor-pointer border border-solid border-[#e7c7ff] bg-[#8424bb] px-4 py-2 shadow-[0px_0px_8px_2px_#b45ff2] hover:bg-[#7a1bb4] transition-colors"
                       >
                         <span className="flex items-center justify-center gap-2.5">
                           <img
@@ -569,7 +580,7 @@ export const AppPreviewSection = () => {
                             </span>
                           </span>
                         </span>
-                      </button>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -657,9 +668,12 @@ export const AppPreviewSection = () => {
                 </p>
                 <div className="inline-flex flex-col items-start justify-center gap-4">
                   {storeButtons.map((button) => (
-                    <button
+                    <a
                       key={`footer-${button.label}`}
-                      className="h-auto w-[179.82px] rounded-[364.1px] border border-solid border-[#e7c7ff] bg-[#8424bb] px-4 py-2 shadow-[0px_0px_8px_2px_#b45ff2]"
+                      href={button.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center h-auto w-[179.82px] rounded-[364.1px] border border-solid border-[#e7c7ff] bg-[#8424bb] px-4 py-2 shadow-[0px_0px_8px_2px_#b45ff2] cursor-pointer hover:bg-[#7a1bb4] transition-colors"
                     >
                       <span className="flex items-center justify-center gap-2.5">
                         <img
@@ -676,7 +690,7 @@ export const AppPreviewSection = () => {
                           </span>
                         </span>
                       </span>
-                    </button>
+                    </a>
                   ))}
                 </div>
               </div>
