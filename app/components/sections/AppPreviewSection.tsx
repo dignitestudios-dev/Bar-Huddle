@@ -85,13 +85,13 @@ const featureColumnsRight = [
 const contactInfo = [
   {
     label: "Location",
-    value: "123 Urban Street, Downtown, New York, NY 10001",
+    value: "29 Hillside Rd, Greenwich, CT, 06830, United States",
     icon: "/figmaAssets/frame-1597880409-2.svg",
-    underline: true,
+    underline: false,
   },
   {
     label: "Phone",
-    value: "+1 (555) 123-4567",
+    value: "(323) 360-4466",
     icon: "/figmaAssets/frame-1597880409.svg",
     underline: false,
   },
@@ -120,12 +120,11 @@ const storeButtons = [
   },
 ];
 
-const quickLinks = ["Home", "About", "Features", "Contact"];
-
-const socialIcons = [
-  "/figmaAssets/tik-tok.png",
-  "/figmaAssets/twiter-icon.png",
-  "/figmaAssets/insta-icon.png",
+const quickLinks = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/#about" },
+  { label: "Features", href: "/#features" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const glassCardClass =
@@ -610,35 +609,20 @@ export const AppPreviewSection = () => {
             src="/figmaAssets/bar-huddle---jpeg-1-1.png"
           />
           <div className="relative z-10 mx-auto w-full max-w-[1440px] px-5 pb-10 pt-[120px] sm:px-8 lg:px-[86px] lg:pb-[60px] lg:pt-[153px]">
-            <div className="grid grid-cols-1 gap-10 lg:grid-cols-[360px_133px_206px_336px] lg:justify-center">
-              <div className="flex flex-col  items-start gap-5 lg:pt-28">
-                <h3 className="text-left [font-family:'Montserrat',Helvetica] text-[22px] font-semibold leading-[normal] tracking-[0] text-white">
-                  Social Links
-                </h3>
-                <div className="flex flex-wrap items-center gap-3 lg:gap-4">
-                  {socialIcons.map((src, index) => (
-                    <img
-                      key={`${src}-${index}`}
-                      className="h-[35px] w-[63px] sm:h-[42px] sm:w-[76px] lg:h-[50px] lg:w-[50px]"
-                      alt="Frame"
-                      src={src}
-                    />
-                  ))}
-                </div>
-              </div>
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[180px_320px_360px] lg:justify-between">
               <nav className="flex flex-col items-start gap-5">
                 <div className="[font-family:'Montserrat',Helvetica] text-[22px] font-semibold leading-[normal] tracking-[0] text-white">
                   Quick Links
                 </div>
                 <div className="flex flex-col items-start gap-2.5">
                   {quickLinks.map((link) => (
-                    <button
-                      key={link}
-                      type="button"
-                      className="text-left [font-family:'Montserrat',Helvetica] text-base font-normal leading-[normal] tracking-[0] text-white"
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      className="text-left [font-family:'Montserrat',Helvetica] text-base font-normal leading-[normal] tracking-[0] text-white hover:text-[#fdf88f] transition-colors"
                     >
-                      {link}
-                    </button>
+                      {link.label}
+                    </a>
                   ))}
                 </div>
               </nav>
@@ -647,14 +631,20 @@ export const AppPreviewSection = () => {
                   Contact
                 </div>
                 <div className="flex flex-col items-start gap-2.5 self-stretch">
+                  <a
+                    href="mailto:support@barhuddle.com"
+                    className="[font-family:'Montserrat',Helvetica] text-base font-normal leading-[normal] tracking-[0] text-white hover:text-[#fdf88f] transition-colors"
+                  >
+                    support@barhuddle.com
+                  </a>
+                  <a
+                    href="tel:3233604466"
+                    className="[font-family:'Montserrat',Helvetica] text-base font-normal leading-[normal] tracking-[0] text-white hover:text-[#fdf88f] transition-colors"
+                  >
+                    (323) 360-4466
+                  </a>
                   <div className="[font-family:'Montserrat',Helvetica] text-base font-normal leading-[normal] tracking-[0] text-white">
-                    support@barapp.com
-                  </div>
-                  <div className="[font-family:'Montserrat',Helvetica] text-base font-normal leading-[normal] tracking-[0] text-white">
-                    +1 (123) 456-7890
-                  </div>
-                  <div className="[font-family:'Montserrat',Helvetica] text-base font-normal leading-[normal] tracking-[0] text-white">
-                    123 Bar Huddle Lane, Suite 100, City, State, Zip
+                    29 Hillside Rd, Greenwich, CT, 06830, United States
                   </div>
                 </div>
               </address>

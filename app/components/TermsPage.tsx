@@ -129,11 +129,6 @@ const quickLinks = [
   { label: "Contact", href: "/#contact" },
 ];
 
-const socialIcons = [
-  "/figmaAssets/tik-tok.png",
-  "/figmaAssets/twiter-icon.png",
-  "/figmaAssets/insta-icon.png",
-];
 
 const glassCardClass =
   "rounded-3xl overflow-hidden border border-white/10 bg-[linear-gradient(175deg,rgba(132,36,187,0.85)_0%,rgba(180,95,242,0.45)_100%)] shadow-[inset_-10px_10px_20px_#ffffff25,inset_0_1px_0_rgba(255,255,255,0.30),inset_1px_0_0_rgba(255,255,255,0.25)] backdrop-brightness-[110%] backdrop-blur-[12px]";
@@ -941,23 +936,7 @@ export const TermsPage = () => {
           src="/figmaAssets/bar-huddle---jpeg-2.png"
         />
         <div className="relative z-10 mx-auto w-full max-w-[1440px] px-5 pb-10 pt-[100px] sm:px-8 lg:px-[86px] lg:pb-[60px] lg:pt-[130px]">
-          <div className="grid grid-cols-1 gap-10 lg:grid-cols-[360px_133px_206px_336px] lg:justify-center">
-            
-            {/* Social Links */}
-            <div className="flex flex-col items-start gap-5 lg:pt-20">
-              <h3 className="font-semibold text-[22px] text-white">Social Links</h3>
-              <div className="flex flex-wrap items-center gap-3 lg:gap-4">
-                {socialIcons.map((src, index) => (
-                  <img
-                    key={`social-${index}`}
-                    className="h-[35px] w-[63px] sm:h-[42px] sm:w-[76px] lg:h-[50px] lg:w-[50px]"
-                    alt="Social icon"
-                    src={src}
-                  />
-                ))}
-              </div>
-            </div>
-
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[180px_320px_360px] lg:justify-between">
             {/* Quick Links */}
             <nav className="flex flex-col items-start gap-5">
               <div className="font-semibold text-[22px] text-white">Quick Links</div>
@@ -978,9 +957,19 @@ export const TermsPage = () => {
             <address className="flex flex-col items-start gap-5 not-italic">
               <div className="font-semibold text-[22px] text-white">Contact</div>
               <div className="flex flex-col items-start gap-2.5 text-base text-white">
-                <div>support@barhuddle.com</div>
-                <div>+1 (555) 123-4567</div>
-                <div>29 Hillside Road Greenwich CT 06830</div>
+                <a
+                  href="mailto:support@barhuddle.com"
+                  className="hover:text-[#fdf88f] transition-colors"
+                >
+                  support@barhuddle.com
+                </a>
+                <a
+                  href="tel:3233604466"
+                  className="hover:text-[#fdf88f] transition-colors"
+                >
+                  (323) 360-4466
+                </a>
+                <div>29 Hillside Rd, Greenwich, CT, 06830, United States</div>
               </div>
             </address>
 
