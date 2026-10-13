@@ -974,7 +974,22 @@ export const PrivacyPolicyPage = () => {
           src="/figmaAssets/bar-huddle---jpeg-2.png"
         />
         <div className="relative z-10 mx-auto w-full max-w-[1440px] px-5 pb-10 pt-[100px] sm:px-8 lg:px-[86px] lg:pb-[60px] lg:pt-[130px]">
-          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[180px_320px_360px] lg:justify-between">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[auto_auto_auto_auto] lg:justify-between items-start">
+            {/* Brand Column / Logo */}
+            <div className="flex flex-col items-start">
+              <a
+                href="/"
+                aria-label="Bar Huddle home"
+                className="inline-block transition-transform hover:scale-105"
+              >
+                <img
+                  className="h-[120px] w-[122px] sm:h-[130px] sm:w-[132px] lg:h-[140px] lg:w-[142px] object-contain"
+                  alt="Bar Huddle Logo"
+                  src="/figmaAssets/bar-huddle---jpeg-1-1.png"
+                />
+              </a>
+            </div>
+
             {/* Quick Links */}
             <nav className="flex flex-col items-start gap-5">
               <div className="font-semibold text-[22px] text-white">Quick Links</div>

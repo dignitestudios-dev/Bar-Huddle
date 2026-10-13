@@ -599,17 +599,27 @@ export const AppPreviewSection = () => {
           }}
         >
           <img
-            className="absolute left-[29px] top-[5px] hidden h-[561px] w-[568px] lg:block"
-            alt="Bar huddle JPEG"
+            className="absolute left-[29px] top-[5px] hidden h-[561px] w-[568px] lg:block pointer-events-none select-none"
+            alt="Bar huddle watermark"
             src="/figmaAssets/bar-huddle---jpeg-2.png"
           />
-          <img
-            className="absolute left-[170px] top-[84px] hidden h-[162px] w-[164px] lg:block"
-            alt="Bar huddle JPEG"
-            src="/figmaAssets/bar-huddle---jpeg-1-1.png"
-          />
           <div className="relative z-10 mx-auto w-full max-w-[1440px] px-5 pb-10 pt-[120px] sm:px-8 lg:px-[86px] lg:pb-[60px] lg:pt-[153px]">
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[180px_320px_360px] lg:justify-between">
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[auto_auto_auto_auto] lg:justify-between items-start">
+              {/* Brand Column / Logo */}
+              <div className="flex flex-col items-start">
+                <a
+                  href="/"
+                  aria-label="Bar Huddle home"
+                  className="inline-block transition-transform hover:scale-105"
+                >
+                  <img
+                    className="h-[120px] w-[122px] sm:h-[130px] sm:w-[132px] lg:h-[140px] lg:w-[142px] object-contain"
+                    alt="Bar Huddle Logo"
+                    src="/figmaAssets/bar-huddle---jpeg-1-1.png"
+                  />
+                </a>
+              </div>
+
               <nav className="flex flex-col items-start gap-5">
                 <div className="[font-family:'Montserrat',Helvetica] text-[22px] font-semibold leading-[normal] tracking-[0] text-white">
                   Quick Links
